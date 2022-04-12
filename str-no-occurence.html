@@ -1,0 +1,39 @@
+<html>
+<head>
+<script>
+function charfun()
+{
+var str=new Array();
+var str=document.getElementById("str1").value;
+
+if(document.f1.chk.r1.checked)
+{
+ var cnt=0,i;	
+ var c=prompt("Enter character","a");
+ for(i=0;i<str.length;i++)
+ {
+  if(str.charAt(i)==c)
+  {
+  cnt++;
+  }
+ }
+ alert(c+" character occures count="+cnt);
+}
+else if(document.f1.chk.r2.checked)
+{ 
+ var c=parseInt(prompt("Enter postion to display character","2"));
+c--;
+ alert("char is on position ="+str.charAt(c));
+}
+}
+
+</script>
+</head>
+<body>
+	<form name="f1">
+Enter a String<input type="text" name="str1"><br>
+<input type="radio" name="chk" value="r1" id="r1">Count occurances of given character<br><br>
+<input type="radio" name="chk" value="r2" id="r2">Character at
+position<br>
+<input type="button" value="Submit" onClick="charfun()"><br></form>
+</body></html>

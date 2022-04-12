@@ -1,0 +1,25 @@
+<html>
+<head>
+<title> Greet user </title>
+<script>
+d=new Date();
+hr=d.getHours();
+if(hr<12)
+document.write("Good Morning"+" </br>")
+else if(hr>12 && hr<16)
+document.write("Good Afternoon"+" </br>" );
+else if(hr>=16 && hr<20)
+document.write("Good Evening "+"</br>");
+else
+document.write("Good Night "+"</br>");
+document.write("Current Day= "+d.getDay()+"</br>")
+document.write("Date= "+d.getDate()+"</br>")
+document.write("Month= "+d.getMonth()+"</br>")
+document.write("Year= "+d.getYear()+"</br>")
+document.write("Hours= "+d.getHours()+"</br>")
+document.write("Minutes= "+d.getMinutes()+"</br>")
+document.write("Seconds="+d.getSeconds()+"</br>")
+
+</script>
+</head>
+</html>
