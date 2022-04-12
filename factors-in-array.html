@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>factors into the array</title>
+		<script language="JavaScript">
+			
+				var n,i;
+				n=parseInt(prompt("Enter number","5"),"10");
+				var a=new Array(20);
+				for(i=1;i<=n;i++)
+				{
+					a[i]=i;
+				}
+function factcal()
+			{
+				document.write("Factors of a "+n+" are <br>");
+				for(i=n;i>=1;i--)
+				{
+					document.write(a[i]+"<br>");
+				}
+			}			
+		</script>
+	</head>
+	<body>
+		<form>
+			<input type="button" value="Click" onclick="factcal()">
+		</form>
+	</body>
+</html>
